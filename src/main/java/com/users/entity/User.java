@@ -1,12 +1,12 @@
 package com.users.entity;
 
-public class user {
+public class User {
     private int id;
     private String name;
     private String email;
     private int age;
 
-    public user() {
+    public User() {
     }
 
     public int getId() {
