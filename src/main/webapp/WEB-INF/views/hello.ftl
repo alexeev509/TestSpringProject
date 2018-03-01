@@ -6,5 +6,6 @@
 </head>
 <body>
     <h1>Hello</h1>
+    <a href="/users">get all users</a>
 </body>
 </html>

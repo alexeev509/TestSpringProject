@@ -11,7 +11,7 @@ public class UserDaoImpl implements UserDao {
 
     private final JdbcTemplate jdbcTemplate;
 
-    private final String GET_ALL = "SELECT * FROM user";
+    private final String GET_ALL = "SELECT * FROM public.user";
 
     @Autowired
     public UserDaoImpl(JdbcTemplate jdbcTemplate) {
