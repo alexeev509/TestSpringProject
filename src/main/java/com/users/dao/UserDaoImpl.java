@@ -39,7 +39,6 @@ public class UserDaoImpl implements UserDao {
     }
 
     public List<User> geAllUsers() {
-        List<User> userList = jdbcTemplate.query(GET_ALL, new UserMaper());
-        return userList;
+        return jdbcTemplate.query(GET_ALL, new UserMaper());
     }
 }
