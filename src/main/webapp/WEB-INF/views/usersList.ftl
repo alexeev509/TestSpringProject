@@ -15,10 +15,10 @@
     </tr>
 <#list users as user>
     <tr>
-        <th>${Id}</th>
-        <th>${Name}</th>
-        <th>${Email}</th>
-        <th>${Age}</th>
+        <th>${user.id}</th>
+        <th>${user.name}</th>
+        <th>${user.email}</th>
+        <th>${user.age}</th>
     </tr>
 </#list>
 </table>
