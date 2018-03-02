@@ -12,7 +12,7 @@ public interface UserDao {
 
     User getById(int id);
 
-    void upDate(User user);
+    void update(User user);
 
     List<User> geAllUsers();
 }
