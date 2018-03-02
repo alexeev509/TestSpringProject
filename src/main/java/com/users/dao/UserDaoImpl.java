@@ -18,6 +18,22 @@ public class UserDaoImpl implements UserDao {
         this.jdbcTemplate = jdbcTemplate;
     }
 
+    public void save(User user) {
+        
+    }
+
+    public void delete(int id) {
+
+    }
+
+    public User getById(int id) {
+        return null;
+    }
+
+    public void upDate(User user) {
+
+    }
+
     public List<User> geAllUsers() {
         List<User> userList = jdbcTemplate.query(GET_ALL, new UserMaper());
         return userList;
