@@ -4,9 +4,11 @@ import com.users.entity.User;
 import com.users.mapper.UserMaper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class UserDaoImpl implements UserDao {
 
     private final JdbcTemplate jdbcTemplate;
