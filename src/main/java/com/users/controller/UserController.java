@@ -52,4 +52,17 @@ public class UserController {
         userService.delete(id);
         return "redirect:/users";
     }
+
+    @GetMapping("/update/{id}")
+    public String updateUser(@PathVariable("id") int id, Model model) {
+        model.addAttribute("user", userService.getById(id));
+        return "update";
+    }
+
+    @PostMapping("/updateUser")
+    public String updateUser(@ModelAttribute("User") User user) {
+        System.out.println(user.toString());
+        userService.update(user);
+        return "redirect:/users";
+    }
 }
